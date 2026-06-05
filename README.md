@@ -37,12 +37,12 @@ Operador (Teclado/UI) -> Unity (Maestro) -> ROS-TCP-Connector -> Bluetooth -> Ro
 * Lado Maestro (Unity): Centraliza la interacción binaria (teclado) y proporcional (sliders) del usuario. Envía comandos de alto a ROS2 y renderiza el feedback visual de las cámaras remotas.
 * Bridge de Comunicación (ros_tcp_endpoint): Actúa como middleware entre Unity y ROS2.
 * Nodo Externo (grafica.py): Un proceso desacoplado de Unity que se suscribe a  datos del sensor de luz en tiempo real.
-# Requisitos PreviosSistema Operativo
-* Ubuntu 22.04 LTS (o compatible con ROS2)
+# Requisitos Previos
+* Sistema Operativo: Ubuntu 22.04 LTS (o compatible con ROS2)
 * ROS2: Humble
 * Unity: Versión 2022.3 LTS o superior con el paquete Unity Robotics Visualization y URDF Importer.
 * Python 3: Librerías rclpy y matplotlib.
-# Instalación y Ejecución1. 
+# Instalación y Ejecución 
 ## Configuración del Lado Esclavo (ROS2)
 Clona este repositorio en tu espacio de trabajo de ROS2 y construye el paquete del endpoint:
 ```Bash
