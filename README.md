@@ -47,6 +47,7 @@ El intérprete SPS.SUB se utiliza para:
 * Gestionar enclavamientos.
 * Emular el comportamiento de la línea de producción.
 ## Estructura del repositorio
+```text
 KRC/
 ├── R1/
 │   ├── Program/
@@ -65,6 +66,7 @@ KRC/
 └── STEU/
     └── MADA/
         └── $CONFIG.DAT
+````
 ## Descripción de módulos
 ### Módulo	Función
 * RSR0001	Programa principal y gestión de estados
