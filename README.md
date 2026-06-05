@@ -45,11 +45,10 @@ Operador (Teclado/UI) -> Unity (Maestro) -> ROS-TCP-Connector -> Bluetooth -> Ro
 # Instalación y Ejecución1. 
 ## Configuración del Lado Esclavo (ROS2)
 Clona este repositorio en tu espacio de trabajo de ROS2 y construye el paquete del endpoint:
-````Bash
+```Bash
 # Navegar al espacio de trabajo
 cd ~/tu_workspace_ros2/src/
 # Compilar el paquete
-```bash
 cd ..
 colcon build --packages-select ros_tcp_endpoint
 source install/setup.bash
