@@ -30,17 +30,17 @@ El proyecto se divide en dos bloques principales que representan los lados Maest
             │   └── grafica.py         # Nodo de telemetría externo (Mapa de luz con Matplotlib)
             ├── CMakeLists.txt
             └── package.xml
-´´´
+```text
 ## Arquitectura del Sistema
 El flujo de información implementa un bucle cerrado de control con tolerancia a fallos distribuyendo la carga de procesamiento:$$\text{Operador (Teclado/UI)} \longrightarrow \text{Unity (Maestro)} \longrightarrow \text{ROS-TCP-Connector} \longrightarrow \text{Wi-Fi/Bluetooth} \longrightarrow \text{Robot (Esclavo)}$$Lado Maestro (Unity): Centraliza la interacción binaria (teclado) y proporcional (sliders) del usuario. Envía comandos de alto y bajo nivel a ROS2 y renderiza el feedback visual de las cámaras remotas.Bridge de Comunicación (ros_tcp_endpoint): Actúa como middleware de traducción de datos entre los scripts en C# de Unity y los nodos de ROS2.Nodo de Telemetría Externo (grafica.py): Un proceso desacoplado de Unity que adquiere datos del sensor de luz en tiempo real. Al correr de forma independiente, si la interfaz gráfica de Unity sufre caídas de frames debido a la latencia de red, la monitorización de datos críticos no se interrumpe.⚙️ Requisitos PreviosSistema Operativo: Ubuntu 22.04 LTS (o compatible con ROS2) / Windows 10/11 (para Unity).ROS2: Humble / Iron (según la distribución utilizada).Unity: Versión 2022.3 LTS o superior con el paquete Unity Robotics Visualization y URDF Importer.Python 3: Librerías rclpy y matplotlib.🛠️ Instalación y Ejecución1. Configuración del Lado Esclavo (ROS2)Clona este repositorio en tu espacio de trabajo de ROS2 y construye el paquete del endpoint:Bash# Navegar al espacio de trabajo
 cd ~/tu_workspace_ros2/src/
 
 # Compilar el paquete
-´´´
+```
 cd ..
 colcon build --packages-select ros_tcp_endpoint
 source install/setup.bash
-´´´
+```
 
 # Lanzar el orquestador (TCP Endpoint + Gráfica de Luz)
 ros2 launch ros_tcp_endpoint endpoint.launch.py
