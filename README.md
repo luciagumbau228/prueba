@@ -67,7 +67,7 @@ KRC/
 └── STEU/
     └── MADA/
         └── $CONFIG.DAT
-````
+```
 ## Resultados obtenidos
 * Migración completa de arquitectura Fanuc → KUKA KRC5
 * Validación funcional completa en entorno de simulación industrial
