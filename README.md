@@ -64,11 +64,11 @@ KRC/
 │   │   └── Mantenimiento.src
 │   │
 │   └── System/
+|       ├── $CONFIG.DAT
 │       └── SPS.SUB
 │
 └── STEU/
-    └── MADA/
-        └── $CONFIG.DAT
+    └── MADA
 ```
 ## Resultados obtenidos
 * Migración completa de arquitectura Fanuc → KUKA KRC5
