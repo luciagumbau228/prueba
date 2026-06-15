@@ -47,8 +47,10 @@ El sistema fue validado en entorno virtual utilizando el siulador iiQWorks.sim, 
 
 <img width="1628" height="927" alt="Captura de pantalla 2026-05-03 152541" src="https://github.com/user-attachments/assets/570d49bf-6fe6-48d1-9990-e50b32a41972" />
 El elemento terminal ha sido representado mediante una caja azul para preservar la confidencialidad del hardware propietario, manteniendo la cinemática y puntos de conexión equivalentes al sistema real.
+
 ## Estructura del repositorio
-```
+
+```text
 KRC/
 ├── R1/
 │   ├── Program/
