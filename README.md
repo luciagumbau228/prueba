@@ -5,7 +5,7 @@ Proyecto de migración y rediseño de software de control para una célula indus
 El sistema fue desarrollado y validado mediante Virtual Commissioning, utilizando un gemelo digital completo de la célula antes de su despliegue, permitiendo verificar comportamiento dinámico, trayectorias, tiempos de ciclo y lógica de señales sin necesidad de hardware físico.
 
 ## Objetivos del proyecto
-* Migración de lógica de control desde sistema Fanuc a KUKA KRC5* Adaptar el software a la arquitectura KUKA KRC5.
+* Migración de lógica de control desde sistema Fanuc a KUKA KRC5 Adaptar el software a la arquitectura KUKA KRC5.
 * Diseño de arquitectura modular en KRL
 * Generación dinámica de patrones de paletizado
 * Optimización de trayectorias robotizadas y reducción de tiempos de ciclo
